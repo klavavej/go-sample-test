@@ -1,3 +1,5 @@
+package main
+
 func handler(ctx context.Context, request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
 	lc, ok := lambdacontext.FromContext(ctx)
 	if !ok {
