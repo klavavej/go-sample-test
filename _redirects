@@ -26,8 +26,12 @@
 
 /pass-param-explicitly-to-echo-function-200 smell=:smell /.netlify/functions/echo 200
 
-/add-param-to-echo-function-301-take2  /.netlify/functions/echo hobby:knitting
+/add-param-to-echo-function-301-take2  /.netlify/functions/echo hobby=knitting
 
-/add-param-to-echo-function-200-take2  /.netlify/functions/echo yarn:soft 200
+/add-param-to-echo-function-200-take2  /.netlify/functions/echo yarn=soft 200
+
+/add-param-to-echo-function-301-take3  /.netlify/functions/echo mouse=:small
+
+/add-param-to-echo-function-200-take3  /.netlify/functions/echo lion=:big 200
 
 /bats /rats
