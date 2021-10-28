@@ -1,6 +1,6 @@
 /cats /dogs
 
-/param-in-to-200 /index.html?dog=silly 200
+/param-in-to-200 /index.html?dog=cool 200
 
 /param-in-to /index.html?dog=silly
 
