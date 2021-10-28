@@ -1,6 +1,6 @@
 /cats /dogs
 
-/param-in-from.html?cat=cute /index.html
+/param-in-to-200 /index.html?dog=silly 200
 
 /param-in-to /index.html?dog=silly
 
