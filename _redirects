@@ -1,22 +1,8 @@
 /cats /dogs
 
+/param-in-to-301 /index.html?dog=silly
+
 /param-in-to-200 /index.html?dog=cool 200
-
-/param-in-to /index.html?dog=silly
-
-/some-url  /some-other-url?x=yz
-
-/no-params-to-function-301 /.netlify/functions/hello
-
-/no-params-to-function-200 /.netlify/functions/hello 200
-
-/add-param-to-function-301  /.netlify/functions/hello?x=yz
-
-/add-param-to-function-200  /.netlify/functions/hello?x=yz 200
-
-/add-param-to-echo-function-301  /.netlify/functions/echo?food=tasty
-
-/add-param-to-echo-function-200  /.netlify/functions/echo?salt=delicious 200
 
 /pass-param-silently-to-echo-function-301  /.netlify/functions/echo
 
@@ -26,12 +12,8 @@
 
 /pass-param-explicitly-to-echo-function-200 smell=:smell /.netlify/functions/echo 200
 
-/add-param-to-echo-function-301-take2  /.netlify/functions/echo hobby=knitting
+/add-param-to-echo-function-301  /.netlify/functions/echo?food=tasty
 
-/add-param-to-echo-function-200-take2  /.netlify/functions/echo yarn=soft 200
-
-/add-param-to-echo-function-301-take3  /.netlify/functions/echo mouse=:small
-
-/add-param-to-echo-function-200-take3  /.netlify/functions/echo lion=:big 200
+/add-param-to-echo-function-200  /.netlify/functions/echo?salt=delicious 200
 
 /bats /rats
