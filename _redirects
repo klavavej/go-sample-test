@@ -1,3 +1,13 @@
 /cats /dogs
 
 /some-url  /some-other-url?x=yz
+
+/no-params-to-function-301 /.netlify/functions/hello
+
+/no-params-to-function-200 /.netlify/functions/hello 200
+
+/add-param-to-function-301  /.netlify/functions/hello?x=yz
+
+/add-param-to-function-200  /.netlify/functions/hello?x=yz 200
+
+/bats /rats
