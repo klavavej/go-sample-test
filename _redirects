@@ -1,5 +1,9 @@
 /cats /dogs
 
+/param-in-from?cat=cute /index.html
+
+/param-in-to /index.html?dog=silly
+
 /some-url  /some-other-url?x=yz
 
 /no-params-to-function-301 /.netlify/functions/hello
