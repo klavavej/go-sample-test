@@ -18,8 +18,12 @@
 
 /add-param-to-echo-function-200  /.netlify/functions/echo?salt=delicious 200
 
-/pass-param-to-echo-function-301?red=roses  /.netlify/functions/echo
+/pass-param-silently-to-echo-function-301  /.netlify/functions/echo
 
-/pass-param-to-echo-function-200?yellow=tulips  /.netlify/functions/echo 200
+/pass-param-silently-to-echo-function-200  /.netlify/functions/echo 200
+
+/pass-param-explicitly-to-echo-function-301 color=:color /.netlify/functions/echo
+
+/pass-param-explicitly-to-echo-function-200 smell=:smell /.netlify/functions/echo 200
 
 /bats /rats
