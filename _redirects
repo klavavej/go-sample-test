@@ -1,5 +1,7 @@
 /cats /dogs
 
+/no-param-301 /index.html
+
 /param-in-to-301 /index.html?dog=silly
 
 /param-in-to-200 /index.html?dog=cool 200
