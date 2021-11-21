@@ -1,7 +1,6 @@
-const { builder } = require('@netlify/functions')
-
-const handler = async (event, context) => {
-  return {
+const { builder } = require('@netlify/functions');
+async function myfunction(event, context) {
+    return {
     statusCode: 200,
     body: `
     <!DOCTYPE html>
@@ -14,4 +13,4 @@ const handler = async (event, context) => {
   };
 }
 
-exports.handler = builder(handler);
+exports.handler = builder(myfunction);
