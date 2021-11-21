@@ -8,7 +8,14 @@ async function handler(event, context) {
 
   return {
     statusCode: 200,
-    body: `${name || "Someone"} called this function on ${time}`,
+     body: `
+    <!DOCTYPE html>
+	    <html>
+		    <body>
+		      Hello World
+		    </body>
+    </html>
+    `,
   };
 }
 
