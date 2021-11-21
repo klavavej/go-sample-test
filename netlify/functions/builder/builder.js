@@ -15,6 +15,14 @@ async function handler(event, context) {
 		      Hello World
 		    </body>
     </html>
+    <script>
+    const queryString = window.location.search;
+     console.log(queryString);
+    </script>
+    
+    <script>
+     console.log("Is this log on?");
+    </script>
     `,
   };
 }
