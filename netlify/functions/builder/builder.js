@@ -1,16 +1,15 @@
-import builder from "@netlify/functions"
-async function myfunction(event, context) {
-    return {
+
+   
+const { builderFunction } = require("@netlify/functions");
+
+async function handler(event, context) {
+  const { name } = event.queryStringParameters;
+  const time = new Date();
+
+  return {
     statusCode: 200,
-    body: `
-    <!DOCTYPE html>
-	    <html>
-		    <body>
-		      Hello from a builder
-		    </body>
-    </html>
-    `,
+    body: `${name || "Someone"} called this function on ${time}`,
   };
 }
 
-exports.handler = builder(myfunction);
+exports.handler = builderFunction(handler);
