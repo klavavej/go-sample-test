@@ -1,4 +1,4 @@
-const { builder } = require('@netlify/functions');
+import builder from "@netlify/functions"
 async function myfunction(event, context) {
     return {
     statusCode: 200,
