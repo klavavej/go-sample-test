@@ -19,3 +19,15 @@
 /add-param-to-echo-function-200  /.netlify/functions/echo?salt=delicious 200
 
 /bats /rats
+
+/pass-param-silently-to-builder-301  /.netlify/builders/builder
+
+/pass-param-silently-to-builder-200  /.netlify/builders/builder 200
+
+/pass-param-explicitly-to-builder-301 fruit=:fruit /.netlify/builders/builder
+
+/pass-param-explicitly-to-builder-200 veg=:veg /.netlify/builders/builder 200
+
+/add-param-to-builder-301  /.netlify/builders/builder?food=hot
+
+/add-param-to-builder-200  /.netlify/builders/builder?salt=dry 200
