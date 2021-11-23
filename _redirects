@@ -6,7 +6,6 @@
 
 /param-in-to-301a frog=:frog /index.html?dog=silly
 
-/param-in-to-301b bog=:bog /index.html?dog=silly? bog=:bog
 
 /param-in-to-200 /index.html?dog=cool 200
 
