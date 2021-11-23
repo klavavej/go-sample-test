@@ -6,6 +6,20 @@
 
 /param-in-to-200 /index.html?dog=cool 200
 
+https://kristen-go-functions-test.netlify.app/pass-param-silently-to-external-301 https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html
+
+https://kristen-go-functions-test.netlify.app/pass-param-silently-to-external-200  https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html 200
+
+https://kristen-go-functions-test.netlify.app/pass-param-explicitly-to-external-301 picture=:picture https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html
+
+https://kristen-go-functions-test.netlify.app/pass-param-explicitly-to-external-200 art=:art https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html 200
+
+https://kristen-go-functions-test.netlify.app/add-param-to-external-301  https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html?water=wet
+
+https://kristen-go-functions-test.netlify.app/add-param-to-external-200 https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html?sky=blue 200
+
+
+
 /pass-param-silently-to-echo-function-301  /.netlify/functions/echo
 
 /pass-param-silently-to-echo-function-200  /.netlify/functions/echo 200
