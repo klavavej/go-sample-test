@@ -65,4 +65,4 @@ https://deploy-preview-1--kristen-go-functions-test.netlify.app/explicitly-pass-
 
 https://deploy-preview-1--kristen-go-functions-test.netlify.app/explicitly-pass-external-200/:filename width=:width  https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html?file=:filename&w=:width&q=75 200
 
-/match-specific-value coffee:drip /index.html
+/match-specific-value coffee=drip /index.html
