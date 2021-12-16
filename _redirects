@@ -74,3 +74,6 @@ https://deploy-preview-1--kristen-go-functions-test.netlify.app/explicitly-pass-
 /transform old-key=:change-key  /index.html?new-key=:change-key
 
 /generated/image url=:url w=:w /img/:url/:w 301! 
+
+/workaround-original /workaround-intermediate?helpful=yes
+/workaround-intermediate /.netlify/functions/echo 200
