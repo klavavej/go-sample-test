@@ -2,10 +2,9 @@
 
 /no-param-301 /index.html
 
+/no-param-200 /index.html 200
+
 /param-in-to-301 /index.html?dog=silly
-
-
-
 
 /param-in-to-200 /index.html?dog=cool 200
 
@@ -16,8 +15,6 @@ https://deploy-preview-1--kristen-go-functions-test.netlify.app/pass-param-silen
 https://deploy-preview-1--kristen-go-functions-test.netlify.app/add-param-to-external-301  https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html?water=wet
 
 https://deploy-preview-1--kristen-go-functions-test.netlify.app/add-param-to-external-200 https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html?sky=blue 200
-
-
 
 /pass-param-silently-to-echo-function-301  /.netlify/functions/echo
 
@@ -35,7 +32,35 @@ https://deploy-preview-1--kristen-go-functions-test.netlify.app/add-param-to-ext
 
 /add-param-to-builder-200  /.netlify/builders/builder?salt=dry 200
 
-/explicitly-pass/:filename width=:width  /index.html?file=:filename&w=:width&q=75
+/match-static tv=:tv /index.html
+https://deploy-preview-1--kristen-go-functions-test.netlify.app/match-external outside=:outside https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html
+/match-function form=:form /.netlify/functions/echo
+/match-builder house=:house /.netlify/builders/builder
+
+/match-static-200 book=:book /index.html 200
+https://deploy-preview-1--kristen-go-functions-test.netlify.app/match-external-200 inside=:inside https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html 200
+/match-function-200 design=:design /.netlify/functions/echo 200
+/match-builder-200 furniture=:furniture /.netlify/builders/builder 200
+
+/match-and-use-param-static bird=:bird /index.html?b=:bird
+https://deploy-preview-1--kristen-go-functions-test.netlify.app/match-and-use-param-external goat=:goat https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html?g=goat
+/match-and-use-param-function sheep=:sheep /.netlify/functions/echo?s=:sheep
+/match-and-use-param-builder cow=:cow /.netlify/builders/builder?c=:cow
+
+/match-and-use-param-static-200 cookie=:cookie /index.html?c=:cookie 200
+https://deploy-preview-1--kristen-go-functions-test.netlify.app/match-and-use-param-external-200 bread=:bread https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/index.html?b=:bread 200
+/match-and-use-param-function-200 pie=:pie /.netlify/functions/echo?p=:pie 200
+/match-and-use-param-builder-200 taco=:taco /.netlify/builders/builder?t=:taco 200
+
+/match-and-use-path-static lion=:lion /:lion
+https://deploy-preview-1--kristen-go-functions-test.netlify.app/match-and-use-path-external tiger=:tiger https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/:tiger
+/match-and-use-path-function bear=:bear /.netlify/functions/:bear
+/match-and-use-path-builder ohmy=:ohmy /.netlify/builders/:ohmy
+
+/match-and-use-path-static-200 shark=:shark /:shark 200
+https://deploy-preview-1--kristen-go-functions-test.netlify.app/match-and-use-path-external-200 whale=:whale https://deploy-preview-1--cranky-fermi-0d3f6f.netlify.app/:whale 200
+/match-and-use-path-function-200 eel=:eel /.netlify/functions/:eel 200
+/match-and-use-path-builder-200 fish=:fish /.netlify/builders/:fish 200
 
 /match-specific-value coffee=drip /index.html
 
