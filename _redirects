@@ -68,3 +68,7 @@ https://deploy-preview-1--kristen-go-functions-test.netlify.app/explicitly-pass-
 /match-specific-value coffee=drip /index.html
 
 /match-multiple-presence-and-value meal=:meal side=eggs /index.html
+
+/transform/:path-to-param /index.html?path=:path-to-param
+/transform param=:param-to-path /test/:param-to-path
+/transform old-key=:change-key  /index.html?new-key=:change-key
