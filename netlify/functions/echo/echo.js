@@ -1,4 +1,4 @@
-async function handler(event, context) {
+exports.handler = async function(event, context) {
   const {test} = event.queryStringParameters
   console.log(test)
   return {
