@@ -1,6 +1,6 @@
 const { builderFunction } = require("@netlify/functions");
 
-async function(event, context) {
+async function handler(event, context) {
   const {
     path,
     queryStringParameters,
