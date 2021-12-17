@@ -1,16 +1,12 @@
 const { builderFunction } = require("@netlify/functions");
 
 async function handler(event, context) {
-  const {
-    path,
-    queryStringParameters,
-  } = event;
-  console.log(`params are ${queryStringParameters}`);
-    return {
-        statusCode: 200,
-        body: JSON.stringify({query: queryStringParameters})
-    };
+  const {jam} = event.queryStringParameters
+  console.log(jam)
+  return {
+    statusCode: 200,
+    body: `Hello, ${jam}`,
+  };
 }
 
 exports.handler = builderFunction(handler);
-
