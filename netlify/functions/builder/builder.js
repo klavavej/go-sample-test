@@ -3,7 +3,8 @@
 const { builderFunction } = require("@netlify/functions");
 
 async function handler(event, context) {
-  const { name } = event.queryStringParameters;
+  const {test} = event.queryStringParameters;
+  console.log(test)
   const time = new Date();
 
   return {
