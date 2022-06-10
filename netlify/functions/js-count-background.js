@@ -4,7 +4,7 @@ exports.handler = async function (event, context) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    function demo() {
+    async function demo() {
         for (let i = 0; i < 60; i++) {
             let date = new Date();
             await sleep(1000);
