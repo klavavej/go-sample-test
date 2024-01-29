@@ -7,11 +7,7 @@ export default async (req: Request, context: Context) => {
 
   const zoo = getStore("zoo");
   await zoo.set("cat", "big and meowy");
-
-  const zoo = getStore("zoo");
   await zoo.set("cat/lion", "roar");
-
-  const zoo = getStore("zoo");
   await zoo.set("cat/puma", "fast");
 
   return new Response("cat blobs set for Construction and Zoo stores");
