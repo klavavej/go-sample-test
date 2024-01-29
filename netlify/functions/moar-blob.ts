@@ -5,10 +5,14 @@ export default async (req: Request, context: Context) => {
   const construction = getStore("construction");
   await construction.set("cat", "For bulldozers");
 
-  const beauty = getStore("zoo");
-  await beauty.set("cat", "big and meowy", {
-    metadata: { material: "acrylic", sale: true },
-  });
+  const zoo = getStore("zoo");
+  await zoo.set("cat", "big and meowy");
+
+  const zoo = getStore("zoo");
+  await zoo.set("cat/lion", "roar");
+
+  const zoo = getStore("zoo");
+  await zoo.set("cat/puma", "fast");
 
   return new Response("cat blobs set for Construction and Zoo stores");
 };
