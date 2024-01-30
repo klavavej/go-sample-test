@@ -7,8 +7,7 @@ export default async (req: Request, context: Context) => {
   await construction.set("tape/masking", "low tack");
   await construction.set("tape/duct", "high tack");
 
-  export default async (req: Request, context: Context) => {
-  const construction = getStore("animals");
+  const animals = getStore("animals");
   await animals.set("bird", "bird");
   await animals.set("cats/shorthair", "short");
   await animals.set("cats/shorthair", "long");
