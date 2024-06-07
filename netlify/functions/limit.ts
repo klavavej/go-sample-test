@@ -6,8 +6,4 @@ export default async (request: Request, context: Context) => {
 };
 export const config: Config = {
   path: "/",
-  rateLimit: {
-    windowLimit: 100,
-    aggregateBy: ["ip", "domain"],
-  }
 };
